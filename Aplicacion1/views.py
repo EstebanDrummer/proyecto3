@@ -47,6 +47,7 @@ def Seleccion(request):
 			contenido1 = seleccion.cleaned_data['Monedas']
 			valor=ValorForm()
 			#return HttpResponse("%s es el valor" % (contenido1))
+			#Enviamos a renderizar el Valor
 			return render_to_response('valorform.html', {'valor':valor, 'contenido1': contenido1}, context_instance=RequestContext(request))
 	else:
 		seleccion = SeleccionForm()
