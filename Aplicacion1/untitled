@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% block contenido %}
+	<form id='valor' method='post' action=''>{% csrf_token %}
+	{{valor}}
+	<p><input type='submit' value='Aceptar' /> </p>
+	</form>
+{% endblock %}

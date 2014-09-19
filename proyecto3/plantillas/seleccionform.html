@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block contenido %}
+	<form enctype="multipart/form-data" action="" method="POST">
+    {% csrf_token %}
+    <h4>Seleccione el adecuado</h4>
+    {{seleccion}}
+    <input type="submit" value='siguiente'  />
+</form>
+{% endblock %}

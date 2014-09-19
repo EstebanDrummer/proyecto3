@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% block contenido %}
+	<form id='valor' method='post' action='http://127.0.0.1:8000/Valor/{{contenido1}}/'>{% csrf_token %}
+	{{valor}}
+	<p><input type='submit' value='Aceptar' /> </p>
+	</form>
+{% endblock %}
