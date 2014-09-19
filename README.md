@@ -1,4 +1,4 @@
-proyecto3
+Proyecto en Django!
 =========
 
 Proyecto Django para Taller de Modelado II.
