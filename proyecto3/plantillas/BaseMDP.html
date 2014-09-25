@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {#<link rel="stylesheet" href="style.css" />#}
+    <title>{% block title %}TITULO DE PLANTILLA BASE{% endblock %}</title>
+    <!-- CSS de Bootstrap -->
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet" media="screen">
+</head>
+
+<body>
+    <div id="sidebar">
+        {% block sidebar %}
+        <ul>
+            <li><a href="/indexMDP">Home</a></li>
+            <li><a href="/primeroMDP/">Prueba uno</a></li>
+            <li><a href="/segundoMDP/">Prueba dos</a></li>
+        </ul>
+        {% endblock %}
+    </div>
+
+    <div id="content">
+        {% block content %}{% endblock %}
+    </div>
+    <script src="/static/js/vendor/bootstrap.min.js"></script>
+</body>
+</html>

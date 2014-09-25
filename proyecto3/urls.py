@@ -14,9 +14,15 @@ urlpatterns = patterns('',
     url(r'^Valor/([A-Z]{3})/$', 'Aplicacion1.views.Valor'),
     # url(r'^proyecto3/', include('proyecto3.foo.urls')),
 
+    #Motor De Plantillas:
+    url(r'^mensajeMDP/$', 'MotorDePlantillas.views.mensaje'),
+    url(r'^indexMDP/$', 'MotorDePlantillas.views.index'),
+    url(r'^primeroMDP/$', 'MotorDePlantillas.views.primerBlog'),
+    url(r'^segundoMDP/$', 'MotorDePlantillas.views.segundoBlog'),
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
     # Uncomment the next line to enable the admin:
     # url(r'^admin/', include(admin.site.urls)),
 )
+
